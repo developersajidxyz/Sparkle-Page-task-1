@@ -1,5 +1,5 @@
 function createStars() {
-    const numStars = 100; 
+    const numStars = 400; 
 
     for (let i = 0; i < numStars; i++) {
         const star = document.createElement("div");
