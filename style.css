@@ -1,75 +1,110 @@
 body {
     font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #c08081, #0073e6);
+    background: linear-gradient(to right, #ea9a8f, #0f70e5);
     height: 100vh;
     overflow: hidden;
 }
 
+
+
+.card {
+    background-color: #3c4353;
+    width: 360px !important;
+    height: auto;
+    color: lightgray;
+    z-index: 9;
+}
+
+.card-title {
+    border-bottom: 1px solid lightgray;
+    padding: 40px 0 30px 0;
+}
+.card-text {
+    letter-spacing: 1px;
+    font-size: smaller;
+    margin: 35px 0;
+}
+
+/* .middleline{
+    height: 0.5px;
+    width: 90%;
+    margin: auto;
+    background: #fff;
+} */
 .star {
     position: absolute;
-    width: 4px;
-    height: 4px;
+    width: 15px;
+    height: 15px;
     background: #fff;
-    border-radius: 50%;
-    opacity: 0.7;
-    filter: blur(4px);
+    /* border-radius: 50%; */
+    opacity: 0.1;
+    filter: blur(2px);
     animation: sparkle 2s infinite, blink linear infinite;
 }
 
-@keyframes sparkle {
+@keyframes sparkle{
 
-    0%,
-    100% {
+    0%, 100%{
         transform: scale(1);
-        opacity: 1;
+        opacity: 0.1;
     }
-
-    50% {
+    50%{
         transform: scale(1.5);
         opacity: 0;
     }
 }
 
-@keyframes blink {
+@keyframes blink{
 
-    0%,
-    100% {
-        opacity: 0;
+    0%, 100% {
+        opacity:0;
     }
-
-    10%,
-    50%,
-    90% {
-        opacity: 1;
+    10%, 50%, 90% {
+        opacity: 0.1;
     }
 }
+
+
 
 /* icons */
 .fa {
     padding: 12px;
-    font-size: 30px;
-    width: 50px;
+    font-size: 16px;
+    width: 33px;
+    height: 33px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
     margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fa:hover {
     opacity: 0.7;
 }
 
+.icons-div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
 .fa-facebook {
-    background: #3B5998;
+    background: #7091d4;
     color: white !important;
 }
-.fa-phone{
-    background: green;
+
+.fa-phone {
+    background: #85b893;
     color: white !important;
 }
+
 .fa-envelope{
-    background: red;
+    background: #c48fa6;
     color: white !important;
 }
